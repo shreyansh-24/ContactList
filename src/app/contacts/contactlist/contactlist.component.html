@@ -1,0 +1,25 @@
+<mat-card class="mother_card" *ngIf="contacts.length > 0">
+<mat-grid-list cols="4" rowHeight="2:3">
+    <mat-grid-tile *ngFor="let contact of contacts" >
+        <mat-card class="example-card">
+            <mat-card-header>
+              <div mat-card-avatar class="example-header-image"></div>
+              <mat-card-title>{{ contact.cname }}</mat-card-title>
+              <mat-card-subtitle>{{ contact.cnum }}</mat-card-subtitle>
+            </mat-card-header>
+            <img mat-card-image src="../../../assets/contact.png" alt="Photo of a Shiba Inu">
+
+            <mat-card-actions>
+              <a mat-button color="primary" [routerLink]="['edit', contact._id]"
+              routerLinkActive="router-link-active">EDIT</a>
+              <button mat-button color="warn" (click)="onDelete(contact._id)" >DELETE</button>
+            </mat-card-actions>
+          </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+</mat-card>
+
+<div *ngIf="contacts.length <= 0">
+  Please Login to See your Contacts.
+</div>
+

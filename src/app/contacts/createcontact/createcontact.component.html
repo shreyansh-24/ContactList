@@ -1,0 +1,30 @@
+
+<mat-card>
+
+<form [formGroup] = "form" (submit) = "onSavePost()">
+  <mat-form-field>
+    <input
+    type="text"
+    formControlName = "cname"
+    matInput
+    placeholder="Contact Name">
+  </mat-form-field>
+
+  <!-- <button mat-stroked-button type="button" (click) = "contactImg.click()">Contact Image</button>
+  <input type="file" #contactImg (change)="onImageSelected($event)">
+  <div class="imagePreview" *ngIf="imagePreview !== '' && imagePreview">
+     <img [src]="imagePreview">
+  </div> -->
+  <mat-form-field>
+    <input
+    type="text"
+    formControlName = "cnum"
+    matInput
+    placeholder="Contact Number">
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="primary">Save</button>
+
+</form>
+
+</mat-card>

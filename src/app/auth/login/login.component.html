@@ -1,0 +1,28 @@
+
+
+<mat-card>
+
+  <form (submit) = "onLogin(Loginform)" #Loginform="ngForm">
+    <mat-form-field>
+      <input
+      type="email"
+      name="email"
+      ngModel
+      matInput
+      placeholder="Enter your email Address">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input
+      type="password"
+      name="password"
+      ngModel
+      matInput
+      placeholder="Enter your password">
+    </mat-form-field>
+
+    <button type="submit" mat-raised-button color="primary">Login</button>
+
+  </form>
+
+  </mat-card>

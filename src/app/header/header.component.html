@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+<span class="topper"> <a routerLink="/">MyContacts</a></span>
+<ul>
+  <li *ngIf="legituser">
+    <a mat-button routerLink="/create" routerLinkActive="active-link">New Contact</a>
+    <!-- active link is the css we add for active link -->
+  </li>
+  <li *ngIf="!legituser">
+    <a mat-button routerLink="/login" routerLinkActive="mat-accent">Login</a>
+  </li>
+  <li *ngIf="!legituser">
+    <a mat-button routerLink="/signup" routerLinkActive="mat-accent">Sign Up</a>
+  </li>
+  <li *ngIf="legituser">
+    <button mat-button (click)='onLogout()'>Logout</button>
+  </li>
+  <li *ngIf="username">
+    <h2 class="mat-caption"> Welcome, {{username}}</h2>
+  </li>
+</ul>
+
+</mat-toolbar>

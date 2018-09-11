@@ -1,0 +1,14 @@
+{
+  "name": "contacts",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.9",
+    "mongoose-unique-validator": "^2.0.1"
+  }
+}

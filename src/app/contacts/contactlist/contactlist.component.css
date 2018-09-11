@@ -1,0 +1,25 @@
+/* .example-card {
+  max-width: 400px;
+} */
+
+.example-header-image {
+  background-image: url('../../../assets/contact.png');
+  background-size: cover;
+}
+mat-grid-tile {
+   /* background: lightblue; */
+
+
+}
+.mat-card-image{
+  width: 195px;
+}
+
+mat-card{
+  width: 100%;
+
+}
+.mother_card{
+  margin-top: 30px;
+
+}
